@@ -4,8 +4,10 @@ let minutes = 59-(new Date().getMinutes());
 let proximoAno = new Date().getUTCFullYear()+1;
 let dias = diasFimAno(new Date(), new Date(proximoAno, 0, 0, 0, 0));
 
+
 const interval = setInterval(() => {
    
+  document.getElementById("ano").innerHTML = proximoAno;
   
   if(sec > 0){
     sec--;
